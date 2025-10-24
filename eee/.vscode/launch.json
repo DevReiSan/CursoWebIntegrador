@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TpIntegradoApplication<ProyectoModelo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.UTP.TpIntegrado.market.TpIntegradoApplication",
+            "projectName": "ProyectoModelo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

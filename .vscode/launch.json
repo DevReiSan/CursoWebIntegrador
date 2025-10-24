@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TpIntegradoApplication",
+            "request": "launch",
+            "mainClass": "com.UTP.TpIntegrado.market.TpIntegradoApplication"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TpIntegradoApplication<TpIntegrado>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.UTP.TpIntegrado.TpIntegradoApplication",
+            "projectName": "TpIntegrado",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TpIntegradoApplication<ProyectoModelo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.UTP.TpIntegrado.market.TpIntegradoApplication",
+            "projectName": "ProyectoModelo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
