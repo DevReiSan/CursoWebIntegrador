@@ -29,6 +29,7 @@ export default function ProductForm({ productoEditar, onGuardado }) {
         }
     };
     return (
+        
         <form onSubmit={onSubmit}>
             <h3>{producto.productId ? "Editar" : "Registrar"} Producto</h3>
             <input name="name" value={producto.name} onChange={onChange} placeholder="Nombre" />
@@ -37,6 +38,7 @@ export default function ProductForm({ productoEditar, onGuardado }) {
             <input name="categoryId" value={producto.categoryId} onChange={onChange} placeholder="Categoría ID"
                 type="number" />
             <button type="submit">{producto.productId ? "Actualizar" : "Registrar"}</button>
+            
         </form>
     );
 }

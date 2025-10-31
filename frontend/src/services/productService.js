@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/market/api/products";
+const BASE_URL = "http://localhost:80/market/api/products";
 export async function getAllProducts() {
     const res = await fetch(`${BASE_URL}/all`);
     if (!res.ok) throw new Error("Error al listar");

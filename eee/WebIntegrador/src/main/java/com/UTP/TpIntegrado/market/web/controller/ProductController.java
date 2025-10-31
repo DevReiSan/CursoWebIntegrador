@@ -38,4 +38,10 @@ public class ProductController {
     public boolean delete(@PathVariable("id") int productId) {
         return productService.delete(productId);
     }
+
+    @PutMapping("/update/{id}")
+    public Product update(@PathVariable("id") int productId, @RequestBody Product product) {
+    product.setProductId(productId);
+    return productService.save(product);
+}
 }

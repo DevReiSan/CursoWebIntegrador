@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 function ProductList() {
     const [productos, setProductos] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:8080/market/api/products/all")
+        fetch("http://localhost:80/market/api/products/all")
             .then(res => res.json())
             .then(data => setProductos(data));
     }, []);

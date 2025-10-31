@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAllProducts, deleteProduct } from "../services/productService";
+import { Button } from '@mui/material';
 export default function ProductList({ onEditar }) {
     const [productos, setProductos] = useState([]);
     const [cargando, setCargando] = useState(true);
@@ -31,8 +32,8 @@ export default function ProductList({ onEditar }) {
             {productos.map((p) => (
                 <li key={p.productId}>
                     {p.name} — S/. {p.price}
-                    <button onClick={() => onEditar(p)}>Editar</button>
-                    <button onClick={() => eliminar(p.productId)}>Eliminar</button>
+                    <Button onClick={() => onEditar(p)} variant="contained">Editar</Button>
+                    <Button onClick={() => eliminar(p.productId)} variant="contained">Eliminar</Button>
                 </li>
             ))}
         </ul>
