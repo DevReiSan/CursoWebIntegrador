@@ -25,6 +25,16 @@
             "projectName": "ProyectoModelo",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TpIntegradoApplication<com.UTP-ProyectoModelo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.UTP.TpIntegrado.market.TpIntegradoApplication",
+            "projectName": "com.UTP-ProyectoModelo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
